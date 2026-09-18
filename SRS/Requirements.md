@@ -41,7 +41,7 @@ The system shall reject invalid or unauthorized commands.
 
 ### **FR-05 — Enter Safe Mode**
 
-The rover shall enter **Safe Mode** when a critical battery or thermal condition is detected.
+The rover shall enter **Safe Mode, within 3 seconds when battery temperature exceeds the critical threshold or battery capacity falls below the defined emergency level
 
 ### **FR-06 — Report Command Execution Status**
 
@@ -71,7 +71,7 @@ Command processing should normally complete within **5 seconds** after a command
 
 ### **NFR-03 — Multiple Rover Support**
 
-The system should support communication with **multiple rovers simultaneously**.
+The system shall support at least **20 simultaneously connected rovers.
 
 ### **NFR-04 — Communication Constraints**
 
@@ -128,7 +128,7 @@ The updated requirement is **measurable and testable** because it specifies **at
 
 ### **Original NFR-02**
 
-Only authenticated Mission Control operators shall be permitted to issue rover commands.
+The system shall require authenticated and role-authorized operators before accepting rover commands..
 
 ### **Updated NFR-02**
 
